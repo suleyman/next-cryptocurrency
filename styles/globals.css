@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-main-bg
+}
+
+@layer components {
+    .button {
+        @apply bg-primary text-white rounded-lg py-2 px-3
+    }
+    .feature-card {
+        @apply text-white rounded-2xl border-2 p-8;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(200px);
+    }
+}
